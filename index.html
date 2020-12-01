@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translate</title>
+    <link href="/styles/main.css" rel="stylesheet">
+
+    <script>
+        function parseValue(txt) {
+            var langName = txt
+            localStorage.setItem("Language", txt)
+            location.href = "translate.html"
+            return false
+        }
+    </script>
+
+</head>
+
+<body>
+    <nav>
+        <div style="font-size: 2rem; padding: 1rem;color: white;">
+            Translator
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <div id="yoda" class="card" onclick="parseValue('yoda');">
+
+            <img class="card-img-top" src="/images/yoda1.png" alt="">
+
+            <div class="card-body">
+                <h5 id="yoda-h5" class="card-title">Yoda Speak translator</h5>
+
+                <div>
+
+                    <p class="card-text">Convert from English to Yoda speak. Yoda often orders sentences as
+                        Object-Subject-Verb, split verbs, switches entire phrases and sometimes uses sentences that are
+                        different from his normal syntax! Because of this it is difficult to accurately represent.</p>
+
+                </div>
+            </div>
+
+        </div>
+        <div id="dothraki" class="card" onclick="parseValue('dothraki');">
+            <img class="card-img-top" src="/images/dothraki.png" alt="">
+
+            <div class="card-body">
+                <h5 class="card-title">Dothraki translator</h5>
+                <div>
+                    <p class="card-text">Convert from English to Dothraki. The Dothraki language is a constructed
+                        fictional language in George R. R. Martin's fantasy novel series A Song of Ice and Fire and its
+                        television adaptation Game of Thrones, where it is spoken by the Dothraki.</p>
+                </div>
+            </div>
+
+        </div>
+        <div id="binary" class="card" onclick="parseValue('binary');">
+            <img class="card-img-top " style="background-color: white;" src="/images/binary.png" alt="">
+            <div class="card-body">
+                <h5 class="card-title">Binary Translator</h5>
+                <p class="card-text">Convert from Strings to Binary representation of 1s and 0s. A binary number is a
+                    number expressed in the binary numeral system or base-2 numeral system which represents numeric
+                    values using two different symbols: typically 0 (zero) and 1 (one).</p>
+            </div>
+
+        </div>
+
+        <div id="Navi" class="card" onclick="parseValue('navi');">
+            <img class="card-img-top" style="background-color: white;" src="/images/avt1.png" alt="">
+            <div class="card-body">
+                <h5 class="card-title">Navi translator</h5>
+                <div>
+                    <p class="card-text">Convert from English to Navi. Na'vi is a constructed language spoken by the
+                        Na'vi people in the fictional world Pandora in James Cameron's blockbuster movie Avatar people
+                        in the fictional world Pandora in James Cameron's blockbuster movie Avatar .</p>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+</body>
+
+</html>

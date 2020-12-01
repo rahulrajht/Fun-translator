@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,500&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #FFDE03;
+    --black: #333333;
+    --width-break:600px;
+    --background-color: #cccccc;
+    
+}
+
+body {
+    background-color: rgb(3, 24, 24);
+    margin: 0;
+    font-family: 'Source Code Pro', monospace;
+
+}
+
+nav {
+    background-color: var(--primary);
+    text-align: center;
+    margin: auto;
+    opacity: 80%;
+}
+
+main {
+    margin: auto;
+    padding: 1rem;
+    max-width: var(--width-break);
+}
+
+textarea {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    min-height: 30vh;
+    margin-top: 2rem;
+    font-size: large;
+    font-family: inherit;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+button {
+    background-color: var(--primary);
+    border: none;
+    border-radius: 1rem;
+    width: fit-content;
+    margin: 1rem 0rem;
+    padding: 1rem 1rem;
+    font-family: 'Kalam', cursive;
+    font-size: large;
+}
+
+
+#translate-output {
+    background-color: whitesmoke;
+    width: 100%;
+    min-height: 30vh;
+    max-height: 50vh;
+    overflow:scroll;
+    border: 1px solid var(--black);
+}
+
+
+
+#msg{
+    background-color: #FFDE03;
+    max-width: max-content;
+    margin: auto;
+}

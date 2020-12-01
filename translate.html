@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Translator </title>
+    <link href="/styles/style.css" rel="stylesheet">
+ 
+    
+</head>
+
+<body>
+    <nav>
+        <div id="heading" style="font-size: 2rem; padding: 1rem;">
+            Banana talk
+            <script>
+                document.getElementById("heading").innerHTML = localStorage.getItem("Language").toUpperCase() + "  Translator" 
+            </script>
+        </div>
+
+    </nav>
+    <main>
+        <textarea id="translate-input"
+            placeholder="Enter your message here which you want to convert."></textarea>
+        <button id="translate-button"> Translate</button>
+        <button id="clear-button"> Clear Text</button>
+
+        <div id="msg">Translation will come here 👇</div>
+           
+        <div id="translate-output" style="padding: 1rem; font-size: large;"></div>
+      
+        </main>
+    
+
+        <script src="app.js" type="text/javascript"> </script>
+</body>
+
+</html>
